@@ -15,15 +15,10 @@ function openAdmin(){
   document.getElementById("adminPage").style.display="flex";
 }
 
-// Back
+// Back to Role
 function goBack(){
   document.getElementById("adminPage").style.display="none";
   document.getElementById("main").style.display="block";
-}
-
-// Login
-function login(){
-  alert("Logged in");
 }
 
 // Open Register
@@ -38,12 +33,17 @@ function backToLogin(){
   document.getElementById("adminPage").style.display="flex";
 }
 
+// Login
+function login(){
+  alert("Logged in");
+}
+
 // Register
 function register(){
   alert("Registered");
 }
 
-// 👁 Toggle Password
+// Toggle Password
 function togglePassword(id){
   let input = document.getElementById(id);
   input.type = input.type === "password" ? "text" : "password";
