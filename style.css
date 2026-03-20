@@ -51,14 +51,34 @@ body {
   border: none;
 }
 
-/* Pages */
+/* Pages (FIXED BUG HERE) */
 #adminPage, #registerPage {
   display: none;
   height: 100vh;
   background: linear-gradient(135deg,#2f7d7a,#3fa9a5);
-  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Back Button */
+.top-bar {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.top-bar:hover {
+  opacity: 0.8;
+}
+
+.arrow {
+  font-size: 20px;
 }
 
 /* Card */
@@ -76,7 +96,7 @@ body {
   padding: 10px;
 }
 
-/* Password box */
+/* Password */
 .password-box {
   display: flex;
   align-items: center;
@@ -91,11 +111,13 @@ body {
   margin-left: 10px;
 }
 
-/* Top */
-.top-bar {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: white;
+/* Link */
+.link {
+  color: #2f7d7a;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
