@@ -1,27 +1,50 @@
-// Splash → Main
-setTimeout(() => {
-  document.getElementById("splash").style.display = "none";
-  document.getElementById("main").style.display = "block";
-}, 2000);
+// Splash
+setTimeout(()=>{
+  document.getElementById("splash").style.display="none";
+  document.getElementById("main").style.display="block";
+},2000);
 
-// Student button
-function selectRole(role) {
-  alert(role + " Selected");
+// Role
+function selectRole(role){
+  alert(role);
 }
 
-// Open Admin Page
-function openAdmin() {
-  document.getElementById("main").style.display = "none";
-  document.getElementById("adminPage").style.display = "flex";
+// Open Admin
+function openAdmin(){
+  document.getElementById("main").style.display="none";
+  document.getElementById("adminPage").style.display="flex";
 }
 
-// Back button
-function goBack() {
-  document.getElementById("adminPage").style.display = "none";
-  document.getElementById("main").style.display = "block";
+// Back
+function goBack(){
+  document.getElementById("adminPage").style.display="none";
+  document.getElementById("main").style.display="block";
 }
 
 // Login
-function login() {
-  alert("Admin Logged In");
+function login(){
+  alert("Logged in");
+}
+
+// Open Register
+function openRegister(){
+  document.getElementById("adminPage").style.display="none";
+  document.getElementById("registerPage").style.display="flex";
+}
+
+// Back to Login
+function backToLogin(){
+  document.getElementById("registerPage").style.display="none";
+  document.getElementById("adminPage").style.display="flex";
+}
+
+// Register
+function register(){
+  alert("Registered");
+}
+
+// 👁 Toggle Password
+function togglePassword(id){
+  let input = document.getElementById(id);
+  input.type = input.type === "password" ? "text" : "password";
 }
