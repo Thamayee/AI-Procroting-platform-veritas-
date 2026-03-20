@@ -33,7 +33,11 @@
 
 <!-- ADMIN LOGIN -->
 <div id="adminPage">
-  <div class="top-bar" onclick="goBack()">← Back to Role Selection</div>
+
+  <div class="top-bar" onclick="goBack()">
+    <span class="arrow">←</span>
+    <span>Back to Role Selection</span>
+  </div>
 
   <div class="login-card">
     <h2>Admin Login</h2>
@@ -51,15 +55,19 @@
 
     <p class="register-text">
       Don't have an account?
-      <span onclick="openRegister()">Register</span>
+      <span class="link" onclick="openRegister()">Register</span>
     </p>
   </div>
+
 </div>
 
-<!-- ADMIN REGISTER -->
+<!-- REGISTER PAGE -->
 <div id="registerPage">
 
-  <div class="top-bar" onclick="backToLogin()">← Back to Login</div>
+  <div class="top-bar" onclick="backToLogin()">
+    <span class="arrow">←</span>
+    <span>Back to Login</span>
+  </div>
 
   <div class="login-card">
     <h2>Admin Registration</h2>
@@ -95,7 +103,7 @@
 
     <p class="register-text">
       Already have an account?
-      <span onclick="backToLogin()">Login</span>
+      <span class="link" onclick="backToLogin()">Login</span>
     </p>
   </div>
 
