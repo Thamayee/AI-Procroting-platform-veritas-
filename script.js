@@ -1,17 +1,27 @@
-const splash = document.getElementById("splash");
-const main = document.getElementById("main");
-
-// After 2 sec → fade splash → show main
+// Splash → Main
 setTimeout(() => {
-  splash.classList.add("fade-out");
-
-  setTimeout(() => {
-    splash.style.display = "none";
-    main.style.display = "block";
-  }, 800); // match fadeOut duration
+  document.getElementById("splash").style.display = "none";
+  document.getElementById("main").style.display = "block";
 }, 2000);
 
-// Button click
+// Student button
 function selectRole(role) {
   alert(role + " Selected");
+}
+
+// Open Admin Page
+function openAdmin() {
+  document.getElementById("main").style.display = "none";
+  document.getElementById("adminPage").style.display = "flex";
+}
+
+// Back button
+function goBack() {
+  document.getElementById("adminPage").style.display = "none";
+  document.getElementById("main").style.display = "block";
+}
+
+// Login
+function login() {
+  alert("Admin Logged In");
 }
