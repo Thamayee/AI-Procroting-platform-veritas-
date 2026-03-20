@@ -7,13 +7,13 @@
 </head>
 <body>
 
-<!-- Splash Screen -->
+<!-- SPLASH -->
 <div id="splash">
   <h1>Veritas AI</h1>
   <p>Loading...</p>
 </div>
 
-<!-- Main Page -->
+<!-- ROLE PAGE -->
 <div id="main">
   <h1>Veritas AI</h1>
   <p>Select your role to continue</p>
@@ -29,9 +29,29 @@
     <div class="card">
       <h2>Admin</h2>
       <p>Create tests, monitor exams</p>
-      <button onclick="selectRole('Admin')">Continue as Admin</button>
+      <button onclick="openAdmin()">Continue as Admin</button>
     </div>
 
+  </div>
+</div>
+
+<!-- ADMIN LOGIN -->
+<div id="adminPage">
+  <div class="top-bar" onclick="goBack()">← Back to Role Selection</div>
+
+  <div class="login-card">
+    <h2>Admin Login</h2>
+    <p>Enter your credentials to continue</p>
+
+    <label>Email</label>
+    <input type="email" placeholder="admin@institution.edu">
+
+    <label>Password</label>
+    <input type="password" placeholder="********">
+
+    <button onclick="login()">Login</button>
+
+    <p class="register-text">Don't have an account? <span>Register</span></p>
   </div>
 </div>
 
