@@ -19,11 +19,10 @@
   <p>Select your role to continue</p>
 
   <div class="container">
-
     <div class="card">
       <div class="icon">🎓</div>
       <h2>Student</h2>
-      <p>Take proctored exams and view your results</p>
+      <p>Take proctored exams and view results</p>
       <button onclick="selectRole('Student')">Continue as Student</button>
     </div>
 
@@ -33,17 +32,12 @@
       <p>Create tests, monitor exams, and view reports</p>
       <button onclick="openAdmin()">Continue as Admin</button>
     </div>
-
   </div>
 </div>
 
 <!-- ADMIN LOGIN -->
 <div id="adminPage">
-
-  <div class="top-bar" onclick="goBack()">
-    <span>←</span>
-    <span>Back to Role Selection</span>
-  </div>
+  <div class="top-bar" onclick="goBack()">← Back to Role Selection</div>
 
   <div class="login-card">
     <h2>Admin Login</h2>
@@ -64,46 +58,60 @@
       <span class="link" onclick="openRegister()">Register</span>
     </p>
   </div>
-
 </div>
 
 <!-- REGISTER PAGE -->
 <div id="registerPage">
-
-  <div class="top-bar" onclick="backToLogin()">
-    <span>←</span>
-    <span>Back to Login</span>
-  </div>
+  <div class="top-bar" onclick="backToLogin()">← Back to Login</div>
 
   <div class="login-card">
+
     <h2>Admin Registration</h2>
 
-    <label>Full Name</label>
-    <input type="text" placeholder="Dr. Jane Smith">
+    <div class="form-grid">
 
-    <label>Email</label>
-    <input type="email" placeholder="example@gmail.com">
+      <div>
+        <label>Full Name</label>
+        <input type="text" placeholder="Dr. Jane Smith">
+      </div>
 
-    <label>Password</label>
-    <div class="password-box">
-      <input type="password" id="regPass">
-      <span onclick="togglePassword('regPass')">👁</span>
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com">
+      </div>
+
+      <div>
+        <label>Password</label>
+        <div class="password-box">
+          <input type="password" id="regPass">
+          <span onclick="togglePassword('regPass')">👁</span>
+        </div>
+      </div>
+
+      <div>
+        <label>Confirm Password</label>
+        <div class="password-box">
+          <input type="password" id="regConfirm">
+          <span onclick="togglePassword('regConfirm')">👁</span>
+        </div>
+      </div>
+
+      <div>
+        <label>Organization</label>
+        <input type="text" placeholder="University">
+      </div>
+
+      <div>
+        <label>Department</label>
+        <input type="text" placeholder="Computer Science">
+      </div>
+
+      <div class="full-width">
+        <label>Contact</label>
+        <input type="text" placeholder="+91 XXXXX XXXXX">
+      </div>
+
     </div>
-
-    <label>Confirm Password</label>
-    <div class="password-box">
-      <input type="password" id="regConfirm">
-      <span onclick="togglePassword('regConfirm')">👁</span>
-    </div>
-
-    <label>Organization</label>
-    <input type="text" placeholder="University">
-
-    <label>Department</label>
-    <input type="text" placeholder="Computer Science">
-
-    <label>Contact</label>
-    <input type="text" placeholder="+91 XXXXX XXXXX">
 
     <button onclick="register()">Register</button>
 
@@ -111,53 +119,8 @@
       Already have an account?
       <span class="link" onclick="backToLogin()">Login</span>
     </p>
+
   </div>
-
-  <div class="form-grid">
-
-  <div>
-    <label>Full Name</label>
-    <input type="text" placeholder="Dr. Jane Smith">
-  </div>
-
-  <div>
-    <label>Email</label>
-    <input type="email" placeholder="example@gmail.com">
-  </div>
-
-  <div>
-    <label>Password</label>
-    <div class="password-box">
-      <input type="password" id="regPass">
-      <span onclick="togglePassword('regPass')">👁</span>
-    </div>
-  </div>
-
-  <div>
-    <label>Confirm Password</label>
-    <div class="password-box">
-      <input type="password" id="regConfirm">
-      <span onclick="togglePassword('regConfirm')">👁</span>
-    </div>
-  </div>
-
-  <div>
-    <label>Organization</label>
-    <input type="text" placeholder="University">
-  </div>
-
-  <div>
-    <label>Department</label>
-    <input type="text" placeholder="Computer Science">
-  </div>
-
-  <div class="full-width">
-    <label>Contact</label>
-    <input type="text" placeholder="+91 XXXXX XXXXX">
-  </div>
-
-</div>
-
 </div>
 
 <script src="script.js"></script>
