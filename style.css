@@ -76,9 +76,15 @@ body {
 #adminPage, #registerPage {
   display: none;
   height: 100vh;
+  width: 100%;
   background: linear-gradient(135deg,#2f7d7a,#3fa9a5);
+
+  display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Back Button */
@@ -99,7 +105,9 @@ body {
   background: white;
   padding: 30px;
   border-radius: 16px;
-  width: 320px;
+  width: 100%;
+  max-width: 380px;   /* 🔥 THIS FIXES STRETCH ISSUE */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 /* Inputs */
@@ -107,6 +115,32 @@ body {
   width: 100%;
   margin: 8px 0;
   padding: 10px;
+}
+
+.login-card label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.login-card input {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: #2f7d7a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 /* Password */
