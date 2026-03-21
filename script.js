@@ -11,26 +11,23 @@ function selectRole(role){
 
 // Open Admin
 function openAdmin(){
-  document.getElementById("main").style.display="none";
-  document.getElementById("adminPage").style.display="flex";
+  document.getElementById("main").style.display = "none";
+  document.getElementById("adminPage").classList.add("active-page");
 }
 
-// Back to Role
 function goBack(){
-  document.getElementById("adminPage").style.display="none";
-  document.getElementById("main").style.display="block";
+  document.getElementById("adminPage").classList.remove("active-page");
+  document.getElementById("main").style.display = "block";
 }
 
-// Open Register
 function openRegister(){
-  document.getElementById("adminPage").style.display="none";
-  document.getElementById("registerPage").style.display="flex";
+  document.getElementById("adminPage").classList.remove("active-page");
+  document.getElementById("registerPage").classList.add("active-page");
 }
 
-// Back to Login
 function backToLogin(){
-  document.getElementById("registerPage").style.display="none";
-  document.getElementById("adminPage").style.display="flex";
+  document.getElementById("registerPage").classList.remove("active-page");
+  document.getElementById("adminPage").classList.add("active-page");
 }
 
 // Login
