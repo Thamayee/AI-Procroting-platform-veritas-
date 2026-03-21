@@ -4,20 +4,20 @@ setTimeout(()=>{
   document.getElementById("main").style.display="block";
 },2000);
 
-// Student
+// Role
 function selectRole(role){
   alert(role);
 }
 
-// Open Admin
+// Navigation
 function openAdmin(){
-  document.getElementById("main").style.display = "none";
+  document.getElementById("main").style.display="none";
   document.getElementById("adminPage").classList.add("active-page");
 }
 
 function goBack(){
   document.getElementById("adminPage").classList.remove("active-page");
-  document.getElementById("main").style.display = "block";
+  document.getElementById("main").style.display="block";
 }
 
 function openRegister(){
@@ -30,12 +30,11 @@ function backToLogin(){
   document.getElementById("adminPage").classList.add("active-page");
 }
 
-// Login
+// Actions
 function login(){
   alert("Logged in");
 }
 
-// Register
 function register(){
   alert("Registered");
 }
