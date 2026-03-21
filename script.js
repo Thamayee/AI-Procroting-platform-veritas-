@@ -4,7 +4,7 @@ setTimeout(()=>{
   document.getElementById("main").style.display="block";
 },2000);
 
-// Role
+// Student
 function selectRole(role){
   alert(role);
 }
