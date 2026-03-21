@@ -168,3 +168,26 @@ body {
 .link:hover {
   text-decoration: underline;
 }
+
+/* GRID LAYOUT */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* 2 columns */
+  gap: 15px;
+}
+
+/* Full width fields */
+.full-width {
+  grid-column: span 2;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+}
