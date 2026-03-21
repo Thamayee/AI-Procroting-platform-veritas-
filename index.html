@@ -19,15 +19,21 @@
   <p>Select your role to continue</p>
 
   <div class="container">
+
     <div class="card">
+      <div class="icon">🎓</div>
       <h2>Student</h2>
+      <p>Take proctored exams and view your results</p>
       <button onclick="selectRole('Student')">Continue as Student</button>
     </div>
 
     <div class="card">
+      <div class="icon">🛡️</div>
       <h2>Admin</h2>
+      <p>Create tests, monitor exams, and view reports</p>
       <button onclick="openAdmin()">Continue as Admin</button>
     </div>
+
   </div>
 </div>
 
@@ -35,7 +41,7 @@
 <div id="adminPage">
 
   <div class="top-bar" onclick="goBack()">
-    <span class="arrow">←</span>
+    <span>←</span>
     <span>Back to Role Selection</span>
   </div>
 
@@ -65,7 +71,7 @@
 <div id="registerPage">
 
   <div class="top-bar" onclick="backToLogin()">
-    <span class="arrow">←</span>
+    <span>←</span>
     <span>Back to Login</span>
   </div>
 
